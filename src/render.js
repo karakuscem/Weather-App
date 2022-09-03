@@ -38,7 +38,7 @@ export default async function render() {
         time.innerHTML = formatInTimeZone(today, timeZone, "HH:mm");
         temperatureData.innerHTML = Math.round(data.main.temp) +  allUnits[0];
         const weatherIcon = data.weather[0].icon;
-        temperatureIcon.src = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
+        temperatureIcon.src = `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
         feelsLikeData.innerHTML = Math.round(data.main.feels_like) +  allUnits[0];
         humidityData.innerHTML = `${data.main.humidity  } %`;
         windSpeedData.innerHTML = data.wind.speed +  allUnits[1];

@@ -14,6 +14,6 @@ export default function newRequest(locationInput, unitInput) {
     `${locationInput}`,
     `${unitInput}`
   );
-  const url = `http://api.openweathermap.org/data/2.5/weather?q=${newApiRequest.location}&APPID=${newApiRequest.appId}&units=${newApiRequest.unit}`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${newApiRequest.location}&APPID=${newApiRequest.appId}&units=${newApiRequest.unit}`;
   return url;
 }
