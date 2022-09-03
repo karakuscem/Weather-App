@@ -14,14 +14,14 @@
     <div class="main">
         <!-- Left Side -->
         <div class="mainLeft">
-            <div class="description">Few Clouds</div>
-            <div class="city">California</div>
-            <div class="date">Friday, 2nd Sep '22</div>
-            <div class="time">6:43 am</div>
+            <div class="description"></div>
+            <div class="city"></div>
+            <div class="date"></div>
+            <div class="time"></div>
             <div class="temperature">
-                <div class="data">10 °C</div>
+                <div class="data" id="temperatureData"></div>
                 <div class="icon">
-                    <img class="infoIcon" src="http://openweathermap.org/img/wn/02n@2x.png" alt="">
+                    <img class="infoIcon" src="" alt="">
                 </div>
             </div>
             <div class="weatherDetailsContainer">
@@ -29,21 +29,21 @@
                     <div class="detailIcon"><i class="fa-solid fa-temperature-high"></i></div>
                     <div class="detailInfo">
                         <div class="dataLabel">Feels Like</div>
-                        <div class="data">10 °C</div>
+                        <div class="data" id="feelsLikeData"></div>
                     </div>
                 </div>
                 <div class="weatherDetails">
                     <div class="detailIcon"><i class="fa-solid fa-droplet"></i></div>
                     <div class="detailInfo">
                         <div class="dataLabel">Humidity</div>
-                        <div class="data">95 %</div>
+                        <div class="data" id="humidityData"></div>
                     </div>
                 </div>
                 <div class="weatherDetails">
                     <div class="detailIcon"><i class="fa-solid fa-wind"></i></div>
                     <div class="detailInfo">
                         <div class="dataLabel">Wind Speed</div>
-                        <div class="data">2.2 km/h</div>
+                        <div class="data" id="windSpeedData"></div>
                     </div>
                 </div>
             </div>
@@ -52,13 +52,12 @@
         <div class="mainRight">
             <div class="searchBarContainer">
                 <input type="search" name="search" id="search" placeholder=" City, Zip-Code or Country">
-                <div class="searchButton"><i class="fa-solid fa-magnifying-glass fa-xs"></i></div>
+                <div class="searchButton" id="searchButton"><i id="searchButton" class="fa-solid fa-magnifying-glass fa-xs"></i></div>
             </div>
             <!-- Change Unit -->
-            <button class="changeUnit">Display °F</button>
+            <button class="changeUnit" value="imperial">°C</button>
             <!-- Error message -->
-            <div class="errorMessage">Location not found.
-                Search must be in the form of "City", "City, State" or "City, Country".</div>
+            <div class="errorMessage"></div>
         </div>
     </div>
 </body>
