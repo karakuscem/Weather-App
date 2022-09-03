@@ -45,9 +45,9 @@ export default async function render() {
     // If there is a problem, handle.
     } catch (error) {
         // eslint-disable-next-line no-console
-        if (data.status === 404) {
+        if (response.status === 404) {
             errorMessage.innerHTML = 'Location not found. Search must be in the form of "City", "City, State" or "City, Country"'
-        } else if (data.status !== 404 || data.status !== 200) {
+        } else if (response.status !== 404 || response.status !== 200) {
             // eslint-disable-next-line no-console
             console.log(error);
         }
