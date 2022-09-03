@@ -22,9 +22,9 @@ export default async function render() {
     let response;
     // Default data
     if (placeInput.value === "") {
-        response = await fetch(newRequest("Burdur", unitButton.value))
+        response = await fetch(newRequest("Burdur", unitButton.value), {mode: 'cors'})
     } else {
-        response = await fetch(newRequest(placeInput.value, unitButton.value))
+        response = await fetch(newRequest(placeInput.value, unitButton.value), {mode: 'cors'})
     }
     const data = await response.json();
     // If there is no problem do this
