@@ -145,6 +145,7 @@ body {
     width: 225px;
     align-items: center;
     justify-content: center;
+    margin-left: 50px;
   }
 
   .weatherDetailsContainer {
