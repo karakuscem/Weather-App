@@ -14,4 +14,4 @@ User can choose Celsius or Fahrenheit
 
 ## Live Preview
 
-[Click](https://karakuscem.github.io/Weather-App/);
+[Click](https://karakuscem.github.io/Weather-App/)
