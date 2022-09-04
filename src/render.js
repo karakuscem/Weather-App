@@ -29,6 +29,9 @@ export default async function render() {
     const data = await response.json();
     // If there is no problem do this
     try {
+        if (response.status === 200) {
+            errorMessage.innerHTML = '';
+        }
         const today = new Date();
         const locale = new Intl.Locale(`en-${data.sys.country}`);
         const timeZone = locale.timeZones[0];
